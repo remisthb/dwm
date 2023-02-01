@@ -91,6 +91,13 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +5 } },
 	{ MODKEY|ShiftMask,             XK_minus,  setgaps,        {.i = GAP_RESET } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = GAP_TOGGLE} },
+        { MODKEY,                       XK_s, scratchpad_show, {.i = 1} },
+        { MODKEY,                       XK_y, scratchpad_show, {.i = 2} },
+        { MODKEY,                       XK_u, scratchpad_show, {.i = 3} },
+        { MODKEY|ShiftMask,                       XK_s, scratchpad_hide, {.i = 1} },
+        { MODKEY|ShiftMask,                       XK_y, scratchpad_hide, {.i = 2} },
+        { MODKEY|ShiftMask,                       XK_u, scratchpad_hide, {.i = 3} },
+        { MODKEY|ShiftMask,             XK_r,      scratchpad_remove,           {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
